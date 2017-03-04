@@ -53,3 +53,7 @@ test {
 
 }
 
+task getDeps(type: Copy) {
+  from sourceSets.main.runtimeClasspath
+  into 'runtime/'
+}
